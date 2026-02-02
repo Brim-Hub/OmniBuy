@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =====================
+   Main Image & Circles Advanced Animation
+   ===================== */
+
+/* Main image floating + click effect */
+.main-float {
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.main-float.clicked {
+  transform: translateY(-25px) rotateY(18deg) rotateX(10deg) rotateZ(3deg) scale(1.08);
+  /* box-shadow: 0 40px 70px rgba(0,0,0,0.18); */
+}
+
+/* Circles floating + click effect */
+.circle {
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Staggered click effect for multiple circles */
+.circle.clicked:nth-child(1) { 
+  transform: translate(-14px, -12px) scale(1.06) rotate(6deg) rotateZ(3deg); 
+  box-shadow: 0 22px 45px rgba(0,0,0,0.12), 0 0 16px rgba(255,255,255,0.22);
+  transition-delay: 0s;
+}
+.circle.clicked:nth-child(2) { 
+  transform: translate(16px, 11px) scale(1.05) rotate(-5deg) rotateZ(-2deg); 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 14px rgba(255,255,255,0.18);
+  transition-delay: 0.08s;
+}
+.circle.clicked:nth-child(3) { 
+  transform: translate(-12px, 16px) scale(1.07) rotate(4deg) rotateZ(2deg); 
+  box-shadow: 0 18px 36px rgba(0,0,0,0.09), 0 0 12px rgba(255,255,255,0.15);
+  transition-delay: 0.15s;
+}
+
+/* Subtle continuous floating for main image and circles */
+.floating-subtle {
+  animation: floatAdvanced 12s ease-in-out infinite;
+}
+
+/* Each element can have slightly different floating animation */
+.main-float.floating-subtle {
+  animation: floatMain 12s ease-in-out infinite;
+}
+.circle.floating-subtle:nth-child(1) {
+  animation: floatCircle1 14s ease-in-out infinite;
+}
+.circle.floating-subtle:nth-child(2) {
+  animation: floatCircle2 16s ease-in-out infinite;
+}
+.circle.floating-subtle:nth-child(3) {
+  animation: floatCircle3 15s ease-in-out infinite;
+}
+
+/* =====================
+   Keyframes
+   ===================== */
+
+/* Main image floating */
+@keyframes floatMain {
+  0%   { transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg); }
+  25%  { transform: translate3d(12px,-10px,0) rotateX(2deg) rotateY(3deg); }
+  50%  { transform: translate3d(-14px,12px,0) rotateX(-2deg) rotateY(-3deg); }
+  75%  { transform: translate3d(10px,-12px,0) rotateX(1deg) rotateY(2deg); }
+  100% { transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg); }
+}
+
+/* Circles floating independently */
+@keyframes floatCircle1 {
+  0%   { transform: translate3d(0,0,0) rotate(0deg); }
+  20%  { transform: translate3d(5px,-8px,0) rotate(2deg); }
+  40%  { transform: translate3d(-6px,10px,0) rotate(-2deg); }
+  60%  { transform: translate3d(8px,-6px,0) rotate(1deg); }
+  80%  { transform: translate3d(-5px,8px,0) rotate(-1deg); }
+  100% { transform: translate3d(0,0,0) rotate(0deg); }
+}
+
+@keyframes floatCircle2 {
+  0%   { transform: translate3d(0,0,0) rotate(0deg); }
+  25%  { transform: translate3d(-7px,10px,0) rotate(-3deg); }
+  50%  { transform: translate3d(6px,-12px,0) rotate(2deg); }
+  75%  { transform: translate3d(-8px,6px,0) rotate(-1deg); }
+  100% { transform: translate3d(0,0,0) rotate(0deg); }
+}
+
+@keyframes floatCircle3 {
+  0%   { transform: translate3d(0,0,0) rotate(0deg); }
+  25%  { transform: translate3d(10px,-6px,0) rotate(1deg); }
+  50%  { transform: translate3d(-12px,8px,0) rotate(-2deg); }
+  75%  { transform: translate3d(6px,-10px,0) rotate(2deg); }
+  100% { transform: translate3d(0,0,0) rotate(0deg); }
+}
+
+/* =====================
+   Glassmorphism Styles
+   ===================== */
+.glass-ultra {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.04),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.glass-iridescent {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(247, 231, 206, 0.2) 50%,
+    rgba(229, 231, 235, 0.3) 100%
+  );
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+}
+
+/* =====================
+   Typography
+   ===================== */
+.text-magazine { font-weight: 100; }
+.text-magazine-bold { font-weight: 800; }

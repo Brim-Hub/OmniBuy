@@ -1,19 +1,62 @@
+// App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import CycleLuxuryObjects from "./CycleLuxuryObjects";
+import FeaturedProductsPage from "./FeaturedProductsPage";
+import StyleLandscapeSection from "./StyleLandscapeSection";
+import AdvancedLuxuryPage from "./AdvancedLuxuryPage";
+import MaterialIntegritySection from "./MaterialIntegritySection";
+import StyleHarmonySection from "./StyleHarmonySection";
+import TopCollectionsSection from "./TopCollectionsSection";
+import ProductShowcase from "./ProductShowcase";
+import CarouselLuxuryShowcase from "./ProductShowcase";
+import LuxuryShowcaseSection from "./CarouselLuxuryShowcase";
+import LuxuryFeatureShowcase from "./LuxuryFeatureShowcase";
+import LuxuryFooter from "./LuxuryFooter";
+import AICommerceCart from "./AICommerceCart";
+import OrderSuccessTracking from "./OrderSuccessTracking";
 
 
-export default function App() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
-      <div className="bg-white p-10 rounded-xl shadow-xl text-center">
-        <h1 className="text-3xl font-bold text-green-600">
-          ✅ Tailwind Success!
-        </h1>
-        <p className="mt-4 text-gray-600">
-          Your Tailwind CSS setup is working correctly.
-        </p>
-        <button className="mt-6 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
-          Test Button
-        </button>
-      </div>
-    </div>
-  );
+
+
+
+const Home = ()=>{
+  return<>
+  <CycleLuxuryObjects/>
+  <StyleLandscapeSection/>
+  <TopCollectionsSection/>
+  <StyleHarmonySection/>
+  <FeaturedProductsPage/>
+  <ProductShowcase/>
+  <AdvancedLuxuryPage/>
+  <MaterialIntegritySection/>
+  <StyleHarmonySection/>
+  <TopCollectionsSection/>
+  <CarouselLuxuryShowcase/>
+  <LuxuryShowcaseSection/>
+  <LuxuryFeatureShowcase/>
+ <LuxuryFooter/>
+  </>
 }
+
+const App = () => {
+  return (
+    <Router>
+      {/* Simple nav */}
+      <nav className="p-4 bg-gray-900 text-white flex gap-4">
+        <Link to="/" className="hover:underline">Home</Link>
+        <Link to="/luxury" className="hover:underline">Luxury Collection</Link>
+        <Link to="/order" className="hover:underline">Luxury Collection</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/luxury" element={<AICommerceCart />} />
+        <Route path="/order" element={<OrderSuccessTracking />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;

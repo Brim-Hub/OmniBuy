@@ -25,6 +25,50 @@ const StyleHarmonySection = () => {
         "https://lh3.googleusercontent.com/aida-public/AB6AXuCpo9q-bljtsZb0NxaM30rNK_F6w0jZWF5N4lHGXW0CT3xMOh0KXNmWkZwWXaQ421NkZRixq2_Nv1LffMY48JGwam-Pi2k5iq4q_AB32exEsRP6fPpLiphiUOwwTLUJ9rAv7gpFUiiEmyt8CTZcD1yQzdrRrbQuvA_p6A42UzQtMbT9dwsBgCEsXnBXFpGdBnH8yv2hLVT9b-S8m5E6hP7CGO-mTlBvL2ZXiRNSiLgZUmlxUMZy-ZTGCryDTmpOcKH2Kmv8_HZj_y8",
       ],
     },
+        {
+      id: "03",
+      title: "Organic Tech",
+      description: "Smart functionality meeting artisanal clay and oak.",
+      mainImage:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBvOKlCMjhOXCSUvGsEJa6hEiYqteEeIWSi0megZMThJcwgpNd1jcTAKdvCELpjRXAxvWsoG1BICr7U-mLkhMlbEKdGAkJVT7bNCNmamildHx3tjDxKc5RlMkXkbxxcIIIOQdJDDkeLl_zuKoHRTdg7Z-e682tzSqucmyVW-n8TgJo9Jrg0i7ck3aWypN4F9aqs92BZiM7Ag5hUW5uJ5wCIv6Rqq10vLZiaxn-QMH80VWCsAO-e_RvMLHTPdW0kURpMMP-s8nhA7Gw",
+      smallImages: [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDM23QPvyI3rj-yJ2RF3f-s8QkGCXrkU3wqKIECQMFhhJvH4km9569XbCLNRTWOhBXs1Uh1Q1xw-QuJboN-QTxHT_qctpATYZZcPODXBh-I5KCf-9a6LXIkkYpK0Z4Mbsx5cLlEqxl9mVsWDMDfjXtn5brReGybZKiGUY4sUEolabKK9a8J1Vyv7fb-iiZ_w5458uaAM4RXI1QHUsuVWmgzfhe4S3bkJZTTJ6KDc9nO7LQweTCkTEKm9txRMBrvnKXaNFebNRpLjEk",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCpo9q-bljtsZb0NxaM30rNK_F6w0jZWF5N4lHGXW0CT3xMOh0KXNmWkZwWXaQ421NkZRixq2_Nv1LffMY48JGwam-Pi2k5iq4q_AB32exEsRP6fPpLiphiUOwwTLUJ9rAv7gpFUiiEmyt8CTZcD1yQzdrRrbQuvA_p6A42UzQtMbT9dwsBgCEsXnBXFpGdBnH8yv2hLVT9b-S8m5E6hP7CGO-mTlBvL2ZXiRNSiLgZUmlxUMZy-ZTGCryDTmpOcKH2Kmv8_HZj_y8",
+      ],
+    },
+        {
+      id: "04",
+      title: "Organic Tech",
+      description: "Smart functionality meeting artisanal clay and oak.",
+      mainImage:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAvqUHgvoZJdA9UR9BgUqLJH4hNhDAjsFbN9LByTLMWuTj-CaLPLt8S9mcl-_iMyiq3s07t5S_-T2W93VxAQppQO2vTwnWO9py0CysZw5HwMx26vIaNLDVu1XrBf1REGejB65baRaHQcgnrDDDs4O2w1wq1wuXgCRvGSO_KkONPVkqY9jb7ZoYQNOE6j5pADTCjh06OWDZWSaq9J3l1nONkrNCOnPPFB11oyqrNEpy3dMHCmz8QiA3vdEdzeKOV_uMniKw358s3Rp0",
+      smallImages: [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDM23QPvyI3rj-yJ2RF3f-s8QkGCXrkU3wqKIECQMFhhJvH4km9569XbCLNRTWOhBXs1Uh1Q1xw-QuJboN-QTxHT_qctpATYZZcPODXBh-I5KCf-9a6LXIkkYpK0Z4Mbsx5cLlEqxl9mVsWDMDfjXtn5brReGybZKiGUY4sUEolabKK9a8J1Vyv7fb-iiZ_w5458uaAM4RXI1QHUsuVWmgzfhe4S3bkJZTTJ6KDc9nO7LQweTCkTEKm9txRMBrvnKXaNFebNRpLjEk",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCpo9q-bljtsZb0NxaM30rNK_F6w0jZWF5N4lHGXW0CT3xMOh0KXNmWkZwWXaQ421NkZRixq2_Nv1LffMY48JGwam-Pi2k5iq4q_AB32exEsRP6fPpLiphiUOwwTLUJ9rAv7gpFUiiEmyt8CTZcD1yQzdrRrbQuvA_p6A42UzQtMbT9dwsBgCEsXnBXFpGdBnH8yv2hLVT9b-S8m5E6hP7CGO-mTlBvL2ZXiRNSiLgZUmlxUMZy-ZTGCryDTmpOcKH2Kmv8_HZj_y8",
+      ],
+    },
+        {
+      id: "05",
+      title: "Organic Tech",
+      description: "Smart functionality meeting artisanal clay and oak.",
+      mainImage:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAvqUHgvoZJdA9UR9BgUqLJH4hNhDAjsFbN9LByTLMWuTj-CaLPLt8S9mcl-_iMyiq3s07t5S_-T2W93VxAQppQO2vTwnWO9py0CysZw5HwMx26vIaNLDVu1XrBf1REGejB65baRaHQcgnrDDDs4O2w1wq1wuXgCRvGSO_KkONPVkqY9jb7ZoYQNOE6j5pADTCjh06OWDZWSaq9J3l1nONkrNCOnPPFB11oyqrNEpy3dMHCmz8QiA3vdEdzeKOV_uMniKw358s3Rp0",
+      smallImages: [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDM23QPvyI3rj-yJ2RF3f-s8QkGCXrkU3wqKIECQMFhhJvH4km9569XbCLNRTWOhBXs1Uh1Q1xw-QuJboN-QTxHT_qctpATYZZcPODXBh-I5KCf-9a6LXIkkYpK0Z4Mbsx5cLlEqxl9mVsWDMDfjXtn5brReGybZKiGUY4sUEolabKK9a8J1Vyv7fb-iiZ_w5458uaAM4RXI1QHUsuVWmgzfhe4S3bkJZTTJ6KDc9nO7LQweTCkTEKm9txRMBrvnKXaNFebNRpLjEk",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCpo9q-bljtsZb0NxaM30rNK_F6w0jZWF5N4lHGXW0CT3xMOh0KXNmWkZwWXaQ421NkZRixq2_Nv1LffMY48JGwam-Pi2k5iq4q_AB32exEsRP6fPpLiphiUOwwTLUJ9rAv7gpFUiiEmyt8CTZcD1yQzdrRrbQuvA_p6A42UzQtMbT9dwsBgCEsXnBXFpGdBnH8yv2hLVT9b-S8m5E6hP7CGO-mTlBvL2ZXiRNSiLgZUmlxUMZy-ZTGCryDTmpOcKH2Kmv8_HZj_y8",
+      ],
+    },
+        {
+      id: "06",
+      title: "Organic Tech",
+      description: "Smart functionality meeting artisanal clay and oak.",
+      mainImage:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAvqUHgvoZJdA9UR9BgUqLJH4hNhDAjsFbN9LByTLMWuTj-CaLPLt8S9mcl-_iMyiq3s07t5S_-T2W93VxAQppQO2vTwnWO9py0CysZw5HwMx26vIaNLDVu1XrBf1REGejB65baRaHQcgnrDDDs4O2w1wq1wuXgCRvGSO_KkONPVkqY9jb7ZoYQNOE6j5pADTCjh06OWDZWSaq9J3l1nONkrNCOnPPFB11oyqrNEpy3dMHCmz8QiA3vdEdzeKOV_uMniKw358s3Rp0",
+      smallImages: [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDM23QPvyI3rj-yJ2RF3f-s8QkGCXrkU3wqKIECQMFhhJvH4km9569XbCLNRTWOhBXs1Uh1Q1xw-QuJboN-QTxHT_qctpATYZZcPODXBh-I5KCf-9a6LXIkkYpK0Z4Mbsx5cLlEqxl9mVsWDMDfjXtn5brReGybZKiGUY4sUEolabKK9a8J1Vyv7fb-iiZ_w5458uaAM4RXI1QHUsuVWmgzfhe4S3bkJZTTJ6KDc9nO7LQweTCkTEKm9txRMBrvnKXaNFebNRpLjEk",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCpo9q-bljtsZb0NxaM30rNK_F6w0jZWF5N4lHGXW0CT3xMOh0KXNmWkZwWXaQ421NkZRixq2_Nv1LffMY48JGwam-Pi2k5iq4q_AB32exEsRP6fPpLiphiUOwwTLUJ9rAv7gpFUiiEmyt8CTZcD1yQzdrRrbQuvA_p6A42UzQtMbT9dwsBgCEsXnBXFpGdBnH8yv2hLVT9b-S8m5E6hP7CGO-mTlBvL2ZXiRNSiLgZUmlxUMZy-ZTGCryDTmpOcKH2Kmv8_HZj_y8",
+      ],
+    },
     // Add more items here if needed
   ];
 
@@ -35,7 +79,7 @@ const StyleHarmonySection = () => {
   return (
     <section className="mb-40">
       <div className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="text-4xl font-bold mb-4">Style Harmony</h2>
+        <h2 className="text-4xl font-bold mt-10 mb-4">Style Harmony</h2>
         <p className="opacity-60 max-w-xl">
           AI-generated pairings designed to breathe life into your wardrobe and home.
         </p>

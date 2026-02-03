@@ -152,6 +152,8 @@
 
 // export default LuxuryPage;
 import React, { useState } from "react";
+import {  useNavigate } from "react-router-dom";
+import ProductJourney from "./ProductJourney";
 
 const objects = [
   {
@@ -192,9 +194,11 @@ const LuxuryPage = () => {
     alert("Button clicked! 💥");
   };
 
+   const navigate = useNavigate(); // ✅ inside the component body
+
   const handleImageClick = (e) => {
     e.stopPropagation();
-    alert("Image clicked! 🖼️");
+    navigate("/product-journey"); // ✅ programmatic navigation
   };
 
   const handleTextDivClick = () => {

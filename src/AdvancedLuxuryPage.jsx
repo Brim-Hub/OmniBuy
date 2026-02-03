@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // import "./globals.css"; // Make sure Tailwind + CSS animations are imported
 
 const objects = [
@@ -24,6 +25,7 @@ const objects = [
 
 const AdvancedLuxuryPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+   const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
 
   const currentObject = objects[currentIndex];
@@ -37,7 +39,14 @@ const AdvancedLuxuryPage = () => {
     alert(`Acquire button clicked for ${currentObject.title} 🎯`);
   };
 
-  const handleClickAnimation = () => setClicked(!clicked);
+  const handleClickAnimation = (e, param) => {
+  e.stopPropagation(); // ✅ now e is defined
+  navigate("/product-discovery");
+};
+    const handleImageClick = (e) => {
+    e.stopPropagation();
+    navigate("/product-journey"); // ✅ programmatic navigation
+  };
 
   return (
     <section className="w-full h-screen flex items-center justify-center relative bg-[#FAFAF9] overflow-hidden">

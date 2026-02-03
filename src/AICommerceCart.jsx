@@ -443,6 +443,7 @@
 //   );
 // }
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const productsBase = [
   {
@@ -468,6 +469,19 @@ const initialItems = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 export default function AICommerceCart() {
+   const navigate = useNavigate(); // ✅ hook inside component
+
+  // Separate function to navigate
+  const goToCelebrations = () => {
+    navigate("/celebration");
+  };
+
+  // Handler for button click
+  const handleCheckout = () => {
+    alert("Proceed to checkout"); // first show alert
+    goToCelebrations();           // then navigate
+  };
+
   const [items, setItems] = useState(initialItems);
   const [quantities, setQuantities] = useState(
     Object.fromEntries(initialItems.map(item => [item.id, 1]))
@@ -501,6 +515,7 @@ export default function AICommerceCart() {
               className="glass-card rounded-xl p-6 flex gap-6 items-center shadow-sm"
             >
               <div
+              onClick={() => navigate("/product-journey")}
                 className="bg-cover bg-center size-32 rounded-lg border"
                 style={{ backgroundImage: `url(${item.image})` }}
               />
@@ -553,12 +568,12 @@ export default function AICommerceCart() {
               <span className="font-bold">${subtotal.toFixed(2)}</span>
             </div>
 
-            <button
-              onClick={() => alert("Proceed to checkout")}
-              className="w-full bg-[#6cc0e4] text-white py-4 rounded-full font-bold"
-            >
-              Secure Checkout
-            </button>
+              <button
+      onClick={handleCheckout} // attach click handler
+      className="w-full bg-[#6cc0e4] text-white py-4 rounded-full font-bold"
+    >
+      Secure Checkout
+    </button>
           </div>
         </div>
 

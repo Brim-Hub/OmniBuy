@@ -1022,6 +1022,7 @@ const OrderSuccessTracking = () => {
                       onClick={() => setSelectedProduct(prod)}
                     >
                       <div
+                      onClick={() => navigate("/product-journey")}
                         className="size-16 rounded-lg bg-cover bg-center border border-gray-100 dark:border-white/5"
                         style={{ backgroundImage: `url("${prod.image}")` }}
                       ></div>
